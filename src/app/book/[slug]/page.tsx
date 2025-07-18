@@ -304,19 +304,6 @@ export default function BookPage() {
                 </p>
               </div>
 
-              <div className="mt-8 space-y-6">
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
-                  About this book
-                </h2>
-                <div className="prose prose-lg dark:prose-invert">
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Content will be added here in the future. This section will
-                    contain more detailed information about the book, including
-                    its themes, inspiration, and impact.
-                  </p>
-                </div>
-              </div>
-
               <div className="mt-10 flex space-x-4">
                 <Link href="/">
                   <button className="px-6 py-3 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-white rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">

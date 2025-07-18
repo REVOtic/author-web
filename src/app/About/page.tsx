@@ -27,7 +27,7 @@ export default function About() {
               About
             </span>
             <Link
-              href="/Books"
+              href="/#books-section"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors"
             >
               Books
@@ -96,7 +96,7 @@ export default function About() {
 
           {/* Action Buttons */}
           <div className="flex justify-center space-x-4">
-            <Link href="/Books">
+            <Link href="/#books-section">
               <button className="bg-gray-900 dark:bg-white dark:text-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">
                 View Books
               </button>
