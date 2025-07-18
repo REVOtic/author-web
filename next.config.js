@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
+const nextConfig = {
   images: {
-    loader: "akamai",
-    path: "",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
   },
-
-
 };
+
+module.exports = nextConfig;

@@ -1,59 +1,94 @@
-<<<<<<< HEAD
-# Next.js + Tailwind CSS + Author (Jyotindra Nath)'s Collections.
+# [NextJS Tailwind Author Page](http://demos.creative-tim.com/nextjs-tailwind-author-page?ref=readme-ntpp) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/nextjs-tailwind-author-page&text=Check%20Material%20Tailwind%202%20Template%20made%20by%20@CreativeTim%20#webdesign%20#template%20#materialdesign%20#react%20https://www.creative-tim.com/product/nextjs-tailwind-author-page)
 
-This is a fully functional website that uses Next.js + Tailwind CSS in the front end. It contains the details of the specific author and the books that have been wriiten and published by the famous and dedicated author. One can have a look at the available books and choose to buy by visiting the page . You can see a Live Demo [here](http://authorjyotindra.com/).
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-author-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-author-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-author-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-author-page/issues?q=is%3Aissue+is%3Aclosed)
 
-We use ReactJs to create the front-end components and populate the home page with images, data of the author and his collections. Also, two other pages are created which are linked to the home page components.One for the books list and another page for a small introduction about the author. The details of the books are displayed with an image, Title, Published data and an overview of it. On visiting the app one can choose to buy the books by clicking on the "Buy now" option provided which will then redirect him/her to the selected book's amazon page on a new tab.
-You can see this live in the provided link. Yes - the store is functional and you can buy your favourite books.
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/742/original/material-tailwind-react-author-template-thumbnail.jpg?1697629563)
 
-## The Tech
+Introducing Tailwind Author Page, a free "About the Author" blog page based on Tailwind CSS and Material Tailwind.
 
-* Next.js + Tailwind CSS
-* Font Awesome Icons
-* Josefin Sans Google Font
-* Github Pages
-* Github Action
+Are you looking for a pre-designed and customizable blog web page template specifically created for writers, authors, and blog owners to showcase their work and establish an online presence. Look no further! We are thrilled to offer you a Free Author Page Template, a beautifully designed and user-friendly template crafted specifically for website blog developers like you.
 
+This "About the Author" template is built with Tailwind CSS and Material Tailwind, offering seamless customization to align with your website's unique branding. The free blog template includes key features such as an author image, a succinct author bio, related articles, and a convenient contact form.
 
-### How to use
+**Documentation built by Developers**
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Each element is well presented in very complex documentation.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+You can read more about the [documentation here](https://www.material-tailwind.com/docs/react/installation).
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-By default, the app is set to show all the available books in the homepage and "/Books" page and the user can navigate through the page and have a look at all the books and can buy any book that he/she likes by clicking on the "Buy now"  button option below the image of every book.
+**HELPFUL LINKS**
 
+- View [Github Repository](https://github.com/creativetimofficial/nextjs-tailwind-author-page)
+- Check [FAQ Page](https://www.creative-tim.com/faq)
 
-#### Installation
+## [Demo](https://creative-tim.com/product/nextjs-tailwind-author-page)
 
-Change into the project directory and run the following command:
+## Quick start
 
-```
-yarn && yarn dev
-```
-```
-npm run dev
-```
+Quick start options:
 
+- Download from [Creative Tim](https://www.creative-tim.com/product/nextjs-tailwind-author-page?ref=readme-ntpp).
 
-### Deploy your own app
+## Terminal Commands
 
-The NextJs app has been deployed on Github-pages using Github Action.
+1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
+2. Navigate to the root ./ directory of the product and run `npm install` to install our local dependencies.
 
-First the application is optimized and made into a production build using the run command "build". A pre rendered Html file that contains the contents along the static css files has to be created and it is done using the run command "export" and a new folder named "out" is created which contains the data to be deployed as a pre rendered page. Finally it is deployed in Github pages using Github Actions as a NodeJs file. We should also provide the information that it is not a jekyll file by creating a file in the "out" folder. The app is then deployed. 
+## Documentation
 
-##### Update Progressive Web App (PWA) data
+The documentation for the Material Dashboard is hosted at our [website](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp).
 
-Update the BoosDate.js file in the components to add, manipulate or remove data and the images under the public/images folder.
+## Browser Support
 
-You can use free tools online such as https://realfavicongenerator.net/ to quickly generate all the different icon sizes and favicon.ico file.
+At present, we officially aim to support the last two versions of the following browsers:
 
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-=======
-# jyotindiranath-html-website
->>>>>>> 447ab69996c707dd2d9d47690626169b8a46dd95
+## Resources
+
+- [Live Preview](https://demos.creative-tim.com/nextjs-tailwind-author-page?ref=readme-ntpp)
+- [Download Page](https://www.creative-tim.com/product/nextjs-tailwind-author-page?ref=readme-ntpp)
+- Documentation is [here](https://www.material-tailwind.com/docs/react/installation?ref=readme-ntpp)
+- [License Agreement](https://www.creative-tim.com/license?ref=readme-ntpp)
+- [Support](https://www.creative-tim.com/contact-us?ref=readme-ntpp)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-tailwind-author-page/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the Nextjs Tailwind Author Page. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Nextjs Tailwind Author Page. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/nextjs-tailwind-author-page?ref=readme-ntpp).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-ntpp) instead of opening an issue.
+
+## Licensing
+
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-ntpp)
+- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-ntpp)
+
+## Useful Links
+
+- [More products](https://www.creative-tim.com/templates?ref=readme-ntpp) from Creative Tim
+
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-ntpp) from Creative Tim
+
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-ntpp) (earn money)
+
+##### Social Media
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
