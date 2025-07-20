@@ -49,7 +49,7 @@ export const allBooks: Book[] = [
   {
     id: 4,
     title: "El Dorado",
-    imageUrl: "/el-dorado.jpeg",
+    imageUrl: "/el-dorado.jpeg", // Now correctly lowercase to match actual file
     slug: "el-dorado",
     amazonLink: "https://amzn.in/d/bAqPcXd",
     year: "10 Jul, 2022",
