@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static HTML export for GitHub Pages
-  basePath: process.env.NODE_ENV === "production" ? "/author-web" : "", // Repository name for GitHub Pages
-  assetPrefix: process.env.NODE_ENV === "production" ? "/author-web/" : "", // Asset prefix for GitHub Pages
+  output: "export", // Enables static HTML export
+  // basePath and assetPrefix should be empty for a custom domain at the root
+  basePath: "",
+  assetPrefix: "",
   images: {
     remotePatterns: [
       {
