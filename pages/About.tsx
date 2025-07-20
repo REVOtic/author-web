@@ -1,11 +1,9 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { BiArrowBack } from "react-icons/bi";
 import Link from "next/link";
-import { Footer } from "../../components/footer";
-import { ThemeToggle } from "../../components/ThemeToggle";
+import { Footer } from "../src/components/footer";
+import { ThemeToggle } from "../src/components/ThemeToggle";
 
 export default function About() {
   return (

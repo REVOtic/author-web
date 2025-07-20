@@ -14,11 +14,11 @@ interface Book {
   description?: string;
 }
 
-const allBooks: Book[] = [
+export const allBooks: Book[] = [
   {
     id: 1,
     title: "DAINANDINI: VICHAR PRAVAH (Hindi Edition)",
-    imageUrl: "/book1.jpeg",
+    imageUrl: "/dainadini.jpeg",
     slug: "dainandini-vichar-pravah",
     amazonLink: "https://amzn.in/d/6ElzAzU",
     year: "2 Nov, 2022",
@@ -28,38 +28,37 @@ const allBooks: Book[] = [
   {
     id: 2,
     title: "DIARY:SAGA UNTOLD",
-    imageUrl: "/book2.jpeg",
+    imageUrl: "/diarysacauntold.jpeg",
     slug: "diary-saga-untold",
     amazonLink: "https://amzn.in/d/dD4wofr",
     year: "25 Oct, 2022",
     description:
-      "This diary book registers my transfer to Chhattisgarh in the fag end of career as reporter. Little surprise that I had to pay for my conscientious rebellion at the 'Hindustan Times', which culminated in exit from it. My aggressiveness continued in Chhattisgarh for some time and later I softened to adjust.",
+      'This diary book registers my transfer to Chhattisgarh in the fag end of career as reporter. Little surprise that I had to pay for my conscientious rebellion at the "Hindustan Times", which culminated in exit from it. My aggressiveness continued in Chhattisgarh for some time and later I softened to adjust.',
   },
   {
     id: 3,
     title: "DIARY: ONE STORY MORE",
-    imageUrl: "/book3.jpeg",
+    imageUrl: "/diaryonestorymore.jpeg",
     slug: "diary-one-story-more",
     amazonLink: "https://amzn.in/d/fGB0Awq",
     year: "10 Sep, 2022",
-    description: `I am present with second part of my autobiography entitled ‘Search Within’. The first was ‘Yadon Ke Satrein’. The third volume was entitled ‘My Date with Editors’. While first volume revolved round my childhood to adolescence the third centred on my profession of journalism.
-    The second part of my autobiography veers round my childhood curiosity and prime youth. I am awed with my surroundings and want to know all about it. I delve deep in self and at last I am puzzled. Lord Krishna says life is puzzle; solve it. The self introspection still continues and I have not solved the jigsaw puzzle. In later parts when I shall write my experience, it may be possible, I hope. But it is my firm belief that life is not a problem to be solved, it is to be felt and enjoyed as it is.
-    I have detailed my student life particularly college and later days. In the making of Jyotindra Nath Prasad several persons and elements have contributed, whom I am obliged with. I studied English literature, which paved me on the path of literature in hurry that is journalism and later to literature in leisure that I am in at present.`,
+    description:
+      'I am present with second part of my autobiography entitled "Search Within". The first was "Yadon Ke Satrein". The third volume was entitled "My Date with Editors". While first volume revolved round my childhood to adolescence the third centred on my profession of journalism.',
   },
   {
     id: 4,
     title: "El Dorado",
-    imageUrl: "/book4.jpeg",
+    imageUrl: "/el-dorado.jpeg",
     slug: "el-dorado",
     amazonLink: "https://amzn.in/d/bAqPcXd",
     year: "10 Jul, 2022",
     description:
-      "It is spiritual book containing 29 articles. It takes you to El Dorado, a land of gold. The book is virtually full of gems and jewelleries. Its one piece strikes upon your identity and surmises that you are 'Shivoham'. All worldly identities have been dismissed and self has been created to say 'Aham.",
+      'It is spiritual book containing 29 articles. It takes you to El Dorado, a land of gold. The book is virtually full of gems and jewelleries. Its one piece strikes upon your identity and surmises that you are "Shivoham". All worldly identities have been dismissed and self has been created to say "Aham".',
   },
   {
     id: 5,
     title: "Dainandini:Ghar-Baahar (Hindi Edition)",
-    imageUrl: "/book5.jpeg",
+    imageUrl: "/dalinadigharbahar.jpeg",
     slug: "dainandini-ghar-baahar",
     amazonLink: "https://amzn.in/d/70BfR3R",
     year: "23 May, 2022",
@@ -69,17 +68,17 @@ const allBooks: Book[] = [
   {
     id: 6,
     title: "Shabdashah (Hindi Edition)",
-    imageUrl: "/book6.jpeg",
+    imageUrl: "/shabdash.jpeg",
     slug: "shabdashah",
     amazonLink: "https://amzn.in/d/ebpXZNm",
     year: "19 May, 2022",
     description:
-      "The title of this book 'Shabdshah' means word by word. Letters are 'Brahma(God)' and words are not perished. The words are immortal and every word spoken so far is believed to be echoing in th e universe, So I introduce you with Brahma. It is in literary form, Literature is a penance, in which writers.",
+      'The title of this book "Shabdshah" means word by word. Letters are "Brahma(God)" and words are not perished. The words are immortal and every word spoken so far is believed to be echoing in th e universe, So I introduce you with Brahma. It is in literary form, Literature is a penance, in which writers.',
   },
   {
     id: 7,
     title: "DIARY:GOSSIP SWEET AND SOUR",
-    imageUrl: "/book7.jpeg",
+    imageUrl: "/diaygossip-sweet-and-sour.jpeg",
     slug: "diary-gossip-sweet-and-sour",
     amazonLink: "https://www.amazon.in/gp/product/B0B18B63X7",
     year: "12 May, 2022",
@@ -89,57 +88,57 @@ const allBooks: Book[] = [
   {
     id: 8,
     title: "DIARY OF A PRESS REPORTER",
-    imageUrl: "/book8.jpeg",
+    imageUrl: "/diaryofapressreporter.jpeg",
     slug: "diary-of-a-press-reporter",
     amazonLink: "https://amzn.in/d/1qbAkat",
     year: "19 Mar, 2022",
     description:
-      "Jyotindra Nath Prasad is the author of this book 'Diary of a Press Reporter'. He is a senior free-lance journalist based in Patna and author of nine books. This new book 'Diary of a Press Reporter' as is evident from the title is the day-to-day chronicle of the happenings in the career of.",
+      'Jyotindra Nath Prasad is the author of this book "Diary of a Press Reporter". He is a senior free-lance journalist based in Patna and author of nine books. This new book "Diary of a Press Reporter" as is evident from the title is the day-to-day chronicle of the happenings in the career of.',
   },
   {
     id: 9,
     title: "SEARCH WITHIN",
-    imageUrl: "/book9.jpeg",
+    imageUrl: "/03.jpeg",
     slug: "search-within",
     amazonLink: "https://amzn.in/d/aVT64Y7",
     year: "4 Mar, 2022",
     description:
-      "I am present with second part of my autobiography entitled 'Search Within'. The first was 'Yadon Ke Satrein'. The third volume was entitled 'My Date with Editors'. While first volume revolved round my childhood to adolescence the third centred on my profession of journalism. The second pa.",
+      'I am present with second part of my autobiography entitled "Search Within". The first was "Yadon Ke Satrein". The third volume was entitled "My Date with Editors". While first volume revolved round my childhood to adolescence the third centred on my profession of journalism. The second pa.',
   },
   {
     id: 10,
     title: "UNTO THE BYZANTINE",
-    imageUrl: "/book10.jpeg",
+    imageUrl: "/untothebyzantine.jpeg",
     slug: "unto-the-byzantine",
     amazonLink: "https://amzn.in/d/hilKUpl",
     year: "25 Feb, 2022",
     description:
-      "The title of the book 'Unto The Byzantine' signifies a land of felicity. Symbolically it is a dream land. I have taken the readers to a new place where there is bliss, hope, love, equality and human values. It is a collection of 22 articles on different subjects. My blogs on social media.",
+      'The title of the book "Unto The Byzantine" signifies a land of felicity. Symbolically it is a dream land. I have taken the readers to a new place where there is bliss, hope, love, equality and human values. It is a collection of 22 articles on different subjects. My blogs on social media.',
   },
   {
     id: 11,
     title: "Diary:Journey Of The Self",
-    imageUrl: "/book11.jpeg",
+    imageUrl: "/journeyoftheself.jpeg",
     slug: "diary-journey-of-the-self",
     amazonLink: "https://amzn.in/d/4LEa4cC",
     year: "2012",
     description:
-      "This book 'Diary: Journey Of The Self' is to the self and through the self. The author bares his soul. The book realms in spiritualism. The author guides to live a spiritual life instead of worldly. Thus, stress is on being human and not beastly.",
+      'This book "Diary: Journey Of The Self" is to the self and through the self. The author bares his soul. The book realms in spiritualism. The author guides to live a spiritual life instead of worldly. Thus, stress is on being human and not beastly.',
   },
   {
     id: 12,
-    title: "Yaadon Ke Satrein (Jyotindra Nath Prasad's books Book 5)",
-    imageUrl: "/book12.jpeg",
+    title: 'Yaadon Ke Satrein (Jyotindra Nath Prasad"s books Book 5)',
+    imageUrl: "/yadokesantre.jpeg",
     slug: "yaadon-ke-satrein",
     amazonLink: "https://amzn.in/d/7xcjR1q",
     year: "2011",
     description:
-      "This book is second part of the author's autobiography. First part 'My Date With Editors' realmed in his journalistic career. Published by the Educreation Publishing as debut book, it received good response from the readers including colleagues, friends, relatives and, of course, editors.",
+      'This book is second part of the author"s autobiography. First part "My Date With Editors" realmed in his journalistic career. Published by the Educreation Publishing as debut book, it received good response from the readers including colleagues, friends, relatives and, of course, editors.',
   },
   {
     id: 13,
     title: "Fashionwad Zindabad",
-    imageUrl: "/book13.jpeg",
+    imageUrl: "/01.jpeg",
     slug: "fashionwad-zindabad",
     amazonLink:
       "https://www.amazon.in/gp/product/B07VR1Y515/ref=dbs_a_def_rwt_hsch_vapi_taft_p2_i3",
@@ -149,18 +148,18 @@ const allBooks: Book[] = [
   },
   {
     id: 14,
-    title: "Phir  Subah Hogi (Hindi Edition)",
-    imageUrl: "/book14.jpeg",
+    title: "Phir Subah Hogi (Hindi Edition)",
+    imageUrl: "/02.jpeg",
     slug: "phir-subah-hogi",
     amazonLink: "https://amzn.in/d/1ZnBfRf",
     year: "2009",
     description:
-      "This book is entitled 'Phir Subah Hogi'. It is a collection of seven stories. As the title signifies it ensures the readers that good days would dawn on them. It shows hopes amidst despair. The book encapsulates varied emotions from negative to positive and lifts the subdued mood. When there is deterioration.",
+      'This book is entitled "Phir Subah Hogi". It is a collection of seven stories. As the title signifies it ensures the readers that good days would dawn on them. It shows hopes amidst despair. The book encapsulates varied emotions from negative to positive and lifts the subdued mood. When there is deterioration.',
   },
   {
     id: 15,
     title: "Prasang (Hindi Edition)",
-    imageUrl: "/book15.jpeg",
+    imageUrl: "/prasang.jpeg",
     slug: "prasang",
     amazonLink: "https://amzn.in/d/ijhEz4N",
     year: "2008",
@@ -170,7 +169,7 @@ const allBooks: Book[] = [
   {
     id: 16,
     title: "Raag-Viraag (Hindi Edition)",
-    imageUrl: "/book16.jpeg",
+    imageUrl: "/raag-virag.jpeg",
     slug: "raag-viraag",
     amazonLink:
       "https://www.amazon.in/gp/product/B08H19FG3N/ref=dbs_a_def_rwt_hsch_vapi_taft_p2_i0",
@@ -181,7 +180,7 @@ const allBooks: Book[] = [
   {
     id: 17,
     title: "My Date With Editors",
-    imageUrl: "/book17.jpeg",
+    imageUrl: "/thedaywitheditors.jpeg",
     slug: "my-date-with-editors",
     amazonLink: "https://amzn.in/d/6zel8zW",
     year: "2006",
@@ -269,7 +268,7 @@ export default function FeaturedBooks() {
           ))}
         </div>
 
-        {!showAllBooks && (
+        {!showAllBooks && allBooks.length > 8 && (
           <div className="mt-16 text-center">
             <button
               onClick={() => setShowAllBooks(true)}

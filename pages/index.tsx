@@ -1,11 +1,9 @@
-"use client";
-
 import React from "react";
-import { ThemeToggle } from "../components/ThemeToggle";
+import { ThemeToggle } from "../src/components/ThemeToggle";
 import Link from "next/link";
 import Image from "next/image";
-import { Footer } from "../components/footer";
-import FeaturedBooks from "./featured-books";
+import { Footer } from "../src/components/footer";
+import FeaturedBooks from "../src/components/featured-books";
 
 export default function Home() {
   return (

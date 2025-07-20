@@ -1,10 +1,8 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { BiArrowBack } from "react-icons/bi";
-import { Footer } from "../../components/footer";
-import { ThemeToggle } from "../../components/ThemeToggle";
+import { Footer } from "../src/components/footer";
+import { ThemeToggle } from "../src/components/ThemeToggle";
 
 export default function Contact() {
   return (
@@ -23,7 +21,7 @@ export default function Contact() {
             <Link href="/">
               <button
                 type="button"
-                className="border-2 text-lg justify-center w-28 items-center flex h-10 rounded-lg text-gray-900 dark:bg-yellow-500 font-bold text-black shadow-lg hover:bg-yellow-500 dark:hover:bg-yellow-400 transition-colors"
+                className="border-2 text-lg justify-center w-28 items-center flex h-10 rounded-lg text-black-900 dark:bg-yellow-500 font-bold text-black shadow-lg hover:bg-yellow-500 dark:hover:bg-yellow-400 transition-colors"
               >
                 <BiArrowBack className="mr-1" />
                 Home
@@ -41,7 +39,8 @@ export default function Contact() {
             </h2>
 
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-12 max-w-2xl">
-              Connect with Jyotindra Nath Prasad for literary discussions, publications, or media inquiries.
+              Connect with Jyotindra Nath Prasad for literary discussions,
+              publications, or media inquiries.
             </p>
 
             <div className="grid md:grid-cols-2 gap-12">
@@ -90,7 +89,6 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  
                 </div>
               </div>
 
@@ -112,8 +110,6 @@ export default function Contact() {
                   rows={6}
                   className="w-full bg-transparent border-b-2 border-gray-300 dark:border-gray-600 px-6 py-4 text-lg text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-yellow-600 dark:focus:border-yellow-400 transition-colors resize-none"
                 ></textarea>
-
-                
 
                 <button
                   type="submit"
