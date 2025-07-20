@@ -21,6 +21,11 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="small"
         className="font-medium"
+        placeholder={undefined}
+        onResize={undefined}
+        onResizeCapture={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         {children}
       </Typography>
@@ -64,9 +69,22 @@ export function Navbar() {
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
+      placeholder={undefined}
+      onResize={undefined}
+      onResizeCapture={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
+        <Typography
+          variant="h6"
+          color={isScrolling ? "blue-gray" : "white"}
+          placeholder={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
           Material Tailwind
         </Typography>
         <ul
@@ -82,11 +100,28 @@ export function Navbar() {
           </NavItem>
         </ul>
         <div className="hidden items-center lg:flex gap-2">
-          <Button variant="text" color={isScrolling ? "gray" : "white"}>
+          <Button
+            variant="text"
+            color={isScrolling ? "gray" : "white"}
+            placeholder={undefined}
+            onResize={undefined}
+            onResizeCapture={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          >
             Log in
           </Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>Blocks</Button>
+            <Button
+              color={isScrolling ? "gray" : "white"}
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
+              Blocks
+            </Button>
           </a>
         </div>
         <IconButton
@@ -94,6 +129,11 @@ export function Navbar() {
           color="white"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          placeholder={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -113,11 +153,28 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text" color="gray">
+            <Button
+              variant="text"
+              color="gray"
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
               Log in
             </Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">Blocks</Button>
+              <Button
+                color="gray"
+                placeholder={undefined}
+                onResize={undefined}
+                onResizeCapture={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
+                Blocks
+              </Button>
             </a>
           </div>
         </div>
