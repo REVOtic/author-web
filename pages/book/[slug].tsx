@@ -5,15 +5,14 @@ import { useRouter } from "next/router";
 import { Footer } from "../../src/components/footer";
 import { ThemeToggle } from "../../src/components/ThemeToggle";
 import { allBooks } from "../../src/components/featured-books";
+import { getImagePath } from "../../src/utils/paths";
 
-// Helper function to properly encode image URLs
+// Helper function to properly encode image URLs with basePath support
 const getImageUrl = (url: string) => {
-  // If URL already starts with http, return it as is
-  if (url.startsWith("http")) {
-    return url;
-  }
-  // Otherwise, ensure proper encoding for local files
-  return url.replace(/ /g, "%20");
+  // First encode the URL
+  const encodedUrl = url.replace(/ /g, "%20");
+  // Then add the basePath if needed
+  return getImagePath(encodedUrl);
 };
 
 export default function BookPage() {

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "../utils/paths";
 
 interface Book {
   id: number;
@@ -213,7 +214,7 @@ export default function FeaturedBooks() {
                 <Link href={`/book/${book.slug}`}>
                   <div className="relative h-full w-full">
                     <Image
-                      src={book.imageUrl}
+                      src={getImagePath(book.imageUrl)}
                       alt={book.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
