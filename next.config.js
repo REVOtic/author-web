@@ -5,12 +5,6 @@ const nextConfig = {
   basePath: "",
   assetPrefix: "",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
     unoptimized: true, // Required for static export
   },
   trailingSlash: true, // Add trailing slashes to improve routing compatibility

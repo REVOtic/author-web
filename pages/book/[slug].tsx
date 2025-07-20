@@ -19,7 +19,7 @@ export default function BookPage() {
   const router = useRouter();
   const { slug } = router.query;
   const book = allBooks.find((book: any) => book.slug === slug);
-  
+
   if (!book || !slug) {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
@@ -54,7 +54,7 @@ export default function BookPage() {
       </div>
     );
   }
-  
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col">
       {/* Navigation */}
