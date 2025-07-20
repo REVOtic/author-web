@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href={`${process.env.NODE_ENV === 'production' ? '/author-web' : ''}/favicon.ico`} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

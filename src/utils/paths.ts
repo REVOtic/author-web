@@ -4,7 +4,7 @@ export const getImagePath = (path: string) => {
     return path;
   }
 
-  // Otherwise, add the basePath if in production
-  const basePath = process.env.NODE_ENV === "production" ? "/author-web" : "";
-  return `${basePath}${path}`;
+  // With a custom domain, we don't need to prefix with /author-web anymore
+  // Just return the path as is - it will be relative to the root
+  return path;
 };
