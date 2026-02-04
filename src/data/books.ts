@@ -1,0 +1,508 @@
+export interface Book {
+  id: number;
+  title: string;
+  subtitle?: string;
+  slug: string;
+  amazonLink: string;
+  coverImage: string;
+  year: string;
+  category: string;
+  description: string;
+  extendedDescription: string;
+  pages?: string;
+  language: string;
+  tags: string[];
+}
+
+export const categories = [
+  { id: "all", name: "All Books", count: 0 },
+  { id: "autobiography", name: "Autobiography", count: 5 },
+  { id: "memoir", name: "Memoir", count: 6 },
+  { id: "journalism", name: "Journalism", count: 2 },
+  { id: "spiritual", name: "Spiritual", count: 3 },
+  { id: "stories", name: "Short Stories", count: 3 },
+  { id: "essays", name: "Essays", count: 1 },
+  { id: "literary", name: "Literary", count: 1 },
+  { id: "poetry", name: "Poetry", count: 2 },
+  { id: "satire", name: "Satire", count: 2 },
+];
+
+export const allBooks: Book[] = [
+  // AUTOBIOGRAPHY SERIES
+  {
+    id: 1,
+    title: "Yadon Ke Galiyare Se",
+    subtitle: "Vol. 1 - Childhood to Adolescence",
+    slug: "yadon-ke-galiyare-se",
+    amazonLink:
+      "https://www.amazon.in/YADON-KE-GALIYARE-SE-Hindi-ebook/dp/B0FPTFFKR4?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/yadokesantre.jpeg",
+    year: "2020",
+    category: "autobiography",
+    description:
+      "The first volume of autobiography depicting childhood to adolescence in a village and town.",
+    extendedDescription:
+      "This is the first volume of my autobiography depicting childhood to adolescence. Born and brought up in a village, his family migrates to town where his schooling is consummated. The boy is curious about the world around him and is ship-shaped by parents, relatives, friends and familiars. He learns the ways of the world and faces vicissitudes of life. This journey from innocence to experience captures the essence of growing up in rural Bihar and the transformation that education brings.",
+    pages: "280+",
+    language: "Hindi",
+    tags: ["autobiography", "childhood", "memoir", "growing up"],
+  },
+  {
+    id: 2,
+    title: "My Chequered Life",
+    subtitle: "Vol. 2 - The Search Within",
+    slug: "my-chequered-life-vol-2",
+    amazonLink:
+      "https://www.amazon.in/MY-CHEQUERED-LIFE-Vol-2-ebook/dp/B0G58XTSSF?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/search-within.jpeg",
+    year: "2022",
+    category: "autobiography",
+    description:
+      "The second volume exploring the origin of life, inner world, and facing highs and lows.",
+    extendedDescription:
+      "In the second volume of his autobiography the author launches a search within. He explores the origin of his life, inner world and faces highs and lows. Quest for life beyond has telling effect on his health but he marches on. He learns to fight for life and not for survival. For him, life is a game which is in its end result victory and defeat and he has to accept it. This introspective journey reveals the making of a writer and journalist.",
+    pages: "300+",
+    language: "English",
+    tags: ["autobiography", "introspection", "life journey"],
+  },
+  {
+    id: 3,
+    title: "My Date With Editors",
+    subtitle: "Vol. 3 - Professional Autobiography",
+    slug: "my-date-with-editors",
+    amazonLink:
+      "https://www.amazon.in/Date-Editors-Jyotindra-Nath-Prasad/dp/B07NL8RVC3?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/thedaywitheditors.jpeg",
+    year: "2019",
+    category: "autobiography",
+    description:
+      "Professional autobiography spanning 47 years of journalism across Delhi, Bihar and Chhattisgarh.",
+    extendedDescription:
+      "The book is his professional autobiography. It unfolds a saga of 47 years of his journey in journalism in India covering Delhi, Bihar and Chhattisgarh states. His has been a chequered career. No godfather, no caretaker. With self help he proceeded in life. At times he has faced the worst and the best also. His journalism is not glamour but adventure. The glory of a reporter lies in unravelling truth.",
+    pages: "320+",
+    language: "English",
+    tags: ["autobiography", "journalism", "career"],
+  },
+  {
+    id: 18,
+    title: "Autobiography of a Journalist",
+    subtitle: "Vol. 1",
+    slug: "autobiography-of-a-journalist-vol-1",
+    amazonLink:
+      "https://www.amazon.in/dp/B0GKY9L9KX?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/yadokesantre.jpeg",
+    year: "2024",
+    category: "autobiography",
+    description:
+      "The first volume of autobiography chronicling the journey of a journalist.",
+    extendedDescription:
+      "This volume chronicles the early journey of a journalist, from humble beginnings to establishing a career in the field of journalism. It captures the struggles, triumphs, and formative experiences that shaped the author's path in the world of news reporting and storytelling.",
+    pages: "280+",
+    language: "English",
+    tags: ["autobiography", "journalism", "memoir"],
+  },
+  {
+    id: 19,
+    title: "Autobiography of a Journalist",
+    subtitle: "Vol. 2",
+    slug: "autobiography-of-a-journalist-vol-2",
+    amazonLink:
+      "https://www.amazon.in/AUTOBIOGRAPHY-JOURNALIST-VOL-JYOTINDRA-NATH-PRASAD-ebook/dp/B0GCSLZ6RR?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/search-within.jpeg",
+    year: "2024",
+    category: "autobiography",
+    description:
+      "The second volume continuing the autobiographical journey of a veteran journalist.",
+    extendedDescription:
+      "The second volume continues the compelling narrative of a journalist's life, delving deeper into the professional challenges, personal growth, and the evolving landscape of journalism in India. It offers insights into the making of a seasoned reporter.",
+    pages: "300+",
+    language: "English",
+    tags: ["autobiography", "journalism", "career"],
+  },
+
+  // MEMOIRS
+  {
+    id: 4,
+    title: "Diary: Gossip Sweet And Sour",
+    slug: "diary-gossip-sweet-and-sour",
+    amazonLink:
+      "https://www.amazon.in/DIARY-GOSSIPS-JYOTINDRA-NATH-PRASAD-ebook/dp/B0FV999X1C?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/diaygossip sweet and sour.jpeg",
+    year: "2022",
+    category: "memoir",
+    description:
+      "A diary unfolding lives of politicians, officials, journalists, and celebrities.",
+    extendedDescription:
+      "This book is in the form of a diary. It unfolds the lives of certain politicians, officials, journalists, managers, celebrities and women with whom this reporter interacted. He is influenced with them and in turn influences them. The author feels that he came in contact with so small a group but it left lasting impressions. These behind-the-scenes encounters reveal the human side of public figures and the intricate web of relationships in journalism.",
+    pages: "210+",
+    language: "English",
+    tags: ["memoir", "diary", "celebrities"],
+  },
+  {
+    id: 5,
+    title: "Dainandini: Vichar Pravah",
+    subtitle: "Patna Diary - Vichar Kram",
+    slug: "dainandini-vichar-pravah",
+    amazonLink:
+      "https://www.amazon.in/DAINANDINI-VICHAR-KRAM-JYOTINDRA-NATH-PRASAD-ebook/dp/B0FF5FRS3R?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/dainadini.jpeg",
+    year: "2022",
+    category: "memoir",
+    description:
+      "Three-part diary covering the end of career, random jottings, and Patna observations.",
+    extendedDescription:
+      "This book is divided into three parts: first section has the author drifting. He jots down events from April 5, 2011 when he was in the fag end of his career, to August 2, 2019 that witnessed his struggle after resignation. The second part is 'Random Jottings' from August 11, 2000 to July 14, 2011. The third section is 'Patna Diary' in which the writer notes down plight of the commoners and destitutes. A raw, unfiltered look at the life of a journalist.",
+    pages: "280+",
+    language: "Hindi",
+    tags: ["memoir", "diary", "patna"],
+  },
+  {
+    id: 6,
+    title: "Diary: Saga Untold",
+    subtitle: "Reporting In Chhattisgarh",
+    slug: "diary-saga-untold",
+    amazonLink:
+      "https://www.amazon.in/REPORTING-CHHATTISGARH-JYOTINDRA-NATH-PRASAD-ebook/dp/B0GFXJQJ43?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/diarysacauntold.jpeg",
+    year: "2022",
+    category: "memoir",
+    description:
+      "Transfer to Chhattisgarh in the fag end of career as reporter.",
+    extendedDescription:
+      "This diary book registers his transfer to Chhattisgarh in the fag end of career as reporter. Little surprise that he had to pay for his conscientious rebellion at the 'Hindustan Times', which culminated in exit from it. His aggressiveness continued in Chhattisgarh for some time and later he softened to adjust with the changing times but it was too late. Office colleagues here too were crafty and he was told that intrigues in the offices are a worldwide phenomenon.",
+    pages: "200+",
+    language: "English",
+    tags: ["memoir", "chhattisgarh", "diary"],
+  },
+  {
+    id: 7,
+    title: "Dainandini: Ghar Baahar",
+    subtitle: "Ghar-Daftar",
+    slug: "dainandini-ghar-baahar",
+    amazonLink:
+      "https://www.amazon.in/DAINANDINI-GHAR-DAFTAR-JYOTINDRA-NATH-PRASAD-ebook/dp/B0F1LBJPMP?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/dalinadigharbahar.jpeg",
+    year: "2022",
+    category: "memoir",
+    description:
+      "Daily happenings in the life of a Hindustan Times Press Reporter.",
+    extendedDescription:
+      "It shows daily happenings in the life of a Press Reporter at 'Hindustan Times' who fearlessly performs his job. He is self-confident and has courage of conviction. He is depressed but shoulders the responsibility of his office and home well. He nurses grievance against inmates of his house but pardons them all as he does with his colleagues. This honest portrayal reveals the dual life of a journalist - at work and at home.",
+    pages: "220+",
+    language: "Hindi",
+    tags: ["memoir", "diary", "hindustan times"],
+  },
+  {
+    id: 20,
+    title: "Patna Diary",
+    slug: "patna-diary",
+    amazonLink:
+      "https://www.amazon.in/PATNA-DIARY-JYOTINDRA-NATH-PRASAD-ebook/dp/B0FQPQCM7G?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/dainadini.jpeg",
+    year: "2024",
+    category: "memoir",
+    description:
+      "Observations and experiences from life in Patna, capturing the essence of the city.",
+    extendedDescription:
+      "This diary captures the author's observations and experiences from his life in Patna. It documents the plight of commoners and destitutes, the pulse of the city, and the everyday struggles and triumphs of people. A vivid portrayal of urban life in Bihar's capital through the eyes of a seasoned journalist.",
+    pages: "240+",
+    language: "English",
+    tags: ["memoir", "diary", "patna"],
+  },
+  {
+    id: 21,
+    title: "Yadon Satrein",
+    slug: "yadon-satrein",
+    amazonLink:
+      "https://www.amazon.in/Yadon-Satrein-Jyotindra-Nath-Prasad/dp/B08BYTR4CJ?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/yadokesantre.jpeg",
+    year: "2020",
+    category: "memoir",
+    description:
+      "Memories and moments from a life lived fully - reflections on personal journey.",
+    extendedDescription:
+      "This book is a collection of memories and moments from the author's life. It reflects on personal experiences, relationships, and the various turning points that shaped his journey. A nostalgic look back at the people, places, and events that left indelible marks on his life.",
+    pages: "260+",
+    language: "Hindi",
+    tags: ["memoir", "memories", "reflections"],
+  },
+
+  // JOURNALISM
+  {
+    id: 8,
+    title: "Diary Of A Press Reporter",
+    slug: "diary-of-a-press-reporter",
+    amazonLink:
+      "https://www.amazon.in/PRESS-REPORTER-JYOTINDRA-NATH-PRASAD-ebook/dp/B0F91XPL8B?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/diaryofapressreporter.jpeg",
+    year: "2022",
+    category: "journalism",
+    description:
+      "Day-to-day chronicle of a senior free-lance journalist based in Patna.",
+    extendedDescription:
+      "The diarist is a senior free-lance journalist based in Patna. His book 'Press Reporter' as is evident from the title is the day-to-day chronicle of the happenings in his career as reporter. He unfolds many secrets. He is trend setter in his profession. Being a dry honest, he emulates the standard of American reporters. He renders many scoops and indulges in investigative journalism. This is his longest book and perhaps his most revealing work.",
+    pages: "350+",
+    language: "English",
+    tags: ["journalism", "reporter", "patna"],
+  },
+  {
+    id: 9,
+    title: "Prasang",
+    subtitle: "Chintan & Jwalant Mudde",
+    slug: "prasang",
+    amazonLink:
+      "https://www.amazon.in/JWALANT-MUDDE-Hindi-JYOTINDRA-PRASAD-ebook/dp/B0FWDN4SNB?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/prasang.jpeg",
+    year: "2020",
+    category: "journalism",
+    description: "Hindi journalism practised by the author since 1984.",
+    extendedDescription:
+      "This is all about Hindi journalism practised by the author. He began freelancing from 1984 through the then esteemed news magazine 'Dinman'. The voyage in journalism was made through different periodicals, which is still continuing. None likes cursing darkness. He too. But he has rejoiced at the brilliance of life also. Most of his reports have the government lacking in performance and rest about contemporary issues facing the majority people. A commentary on Indian society through the lens of journalism.",
+    pages: "280+",
+    language: "Hindi",
+    tags: ["journalism", "essays", "commentary"],
+  },
+
+  // SPIRITUAL
+  {
+    id: 10,
+    title: "El Dorado",
+    subtitle: "Gems Of Truth",
+    slug: "el-dorado",
+    amazonLink:
+      "https://www.amazon.in/GEMS-TRUTH-JYOTINDRA-NATH-PRASAD-ebook/dp/B0G3BFLRMW?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/El dorado.jpeg",
+    year: "2022",
+    category: "spiritual",
+    description:
+      "A spiritual journey containing 38 articles - a land of gold and gems.",
+    extendedDescription:
+      "It is a spiritual book containing 38 articles. It takes you to El Dorado, a land of gold. The book is virtually full of gems and jewelleries. Its one piece strikes upon your identity and surmises that you are 'Shiva'. All worldly identities have been dismissed and self has been created to say 'Aham Brahmashmi'! Mind has to be reined and all wishful thinking be obliterated to develop it as 'kalpbriksha'. What you will is fulfilled. A profound exploration of spirituality and self-realization.",
+    pages: "180+",
+    language: "English",
+    tags: ["spiritual", "philosophy", "self-realization"],
+  },
+  {
+    id: 11,
+    title: "Diary: Journey Of The Self",
+    slug: "diary-journey-of-the-self",
+    amazonLink:
+      "https://www.amazon.in/DIARY-INNER-JOURNEY-JYOTINDRA-PRASAD-ebook/dp/B0G49MPCPT?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/journeyoftheself.jpeg",
+    year: "2012",
+    category: "spiritual",
+    description:
+      "Journey of the self, to the self and by the self in spiritualism.",
+    extendedDescription:
+      "This book is journey of the self, to the self and by the self. It realms in spiritualism. The author bares his soul. He guides us to live a spiritual life instead of worldly. Thus, stress is on being human and not beastly. For humanity is akin to divinity. He ponders, meditates and thus, wisdom dawns on us. He is a torch-bearer of truth and love, and is pacific. The meditative quality of this work makes it a companion for seekers of inner peace.",
+    pages: "160+",
+    language: "English",
+    tags: ["spiritual", "meditation", "inner journey"],
+  },
+  {
+    id: 22,
+    title: "Chintan",
+    slug: "chintan",
+    amazonLink:
+      "https://www.amazon.in/CHINTAN-Hindi-JYOTINDRA-NATH-PRASAD-ebook/dp/B0DX35SSD4?ref_=ast_author_dp_rw&th=1&psc=1",
+    coverImage: "/El dorado.jpeg",
+    year: "2024",
+    category: "spiritual",
+    description:
+      "Spiritual contemplations and reflections on life, truth, and inner peace.",
+    extendedDescription:
+      "This book offers spiritual contemplations and deep reflections on life, truth, and the pursuit of inner peace. It guides readers on a path of self-discovery and spiritual awakening, emphasizing the importance of mindfulness and conscious living.",
+    pages: "170+",
+    language: "Hindi",
+    tags: ["spiritual", "contemplation", "hindi"],
+  },
+
+  // STORIES
+  {
+    id: 12,
+    title: "Phir Subah Hogi",
+    subtitle: "Jalta Deep - Short Stories",
+    slug: "phir-subah-hogi",
+    amazonLink:
+      "https://www.amazon.in/JALTA-DEEP-Hindi-JYOTINDRA-PRASAD-ebook/dp/B0DV3ZMB5K?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/phir-subah-hogi.jpeg",
+    year: "2019",
+    category: "stories",
+    description:
+      "A collection of 21 short stories showing hopes amidst despair.",
+    extendedDescription:
+      "This book is a collection of 21 short stories. As the title signifies it ensures the readers that good days would dawn on them. It shows hopes amidst despair. The book encapsulates varied emotions from negative to positive and lifts the subdued mood. When there is deterioration all around and scene sickening it boosts the morale and beams the light. The stories have been taken from the hard realities of life as experienced by the author. A testament to the resilience of the human spirit.",
+    pages: "180+",
+    language: "Hindi",
+    tags: ["stories", "hope", "inspiration"],
+  },
+  {
+    id: 13,
+    title: "Diary: One Story More",
+    subtitle: "Diary Of Stories",
+    slug: "diary-one-story-more",
+    amazonLink:
+      "https://www.amazon.in/DIARY-STORIES-JYOTINDRA-NATH-PRASAD-ebook/dp/B0FKC1BG7F?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/diaryonestorymore.jpeg",
+    year: "2022",
+    category: "stories",
+    description: "Stories about kins, colleagues and health in a joint family.",
+    extendedDescription:
+      "The book has to do with diarist's kins, colleagues and health. He has been living in a joint family. Joint family life gives a sense of security but immense responsibility amidst differences of opinion. He is particular about his health while he is aging and shares load of official work. He is dismayed with his surrounding, which is replete with negativity. He comes to know that official intrigues, which he is victim of, are a world phenomenon. Stories that mirror the complexity of family and professional relationships.",
+    pages: "180+",
+    language: "English",
+    tags: ["stories", "family", "health"],
+  },
+  {
+    id: 23,
+    title: "Kuch Ankahi",
+    subtitle: "Unspoken Words",
+    slug: "kuch-ankahi",
+    amazonLink:
+      "https://www.amazon.in/KUCH-ANKAHI-Hindi-JYOTINDRA-PRASAD-ebook/dp/B0D2N2HM4F?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/phir-subah-hogi.jpeg",
+    year: "2024",
+    category: "stories",
+    description:
+      "Stories of unspoken emotions, silent struggles, and unexpressed feelings.",
+    extendedDescription:
+      "This collection brings together stories of unspoken emotions, silent struggles, and feelings that often remain unexpressed. It captures the depth of human emotions that lie beneath the surface, exploring the unsaid words and hidden sentiments that shape our relationships and lives.",
+    pages: "190+",
+    language: "Hindi",
+    tags: ["stories", "emotions", "hindi"],
+  },
+
+  // ESSAYS
+  {
+    id: 14,
+    title: "Unto The Byzantine",
+    subtitle: "Quest For Byzantine",
+    slug: "unto-the-byzantine",
+    amazonLink:
+      "https://www.amazon.in/QUEST-BYZANTINE-JYOTINDRA-NATH-PRASAD-ebook/dp/B0G49YV37D?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/unto-the-byzantine.jpeg",
+    year: "2023",
+    category: "essays",
+    description:
+      "A collection of 23 articles on bliss, hope, love, equality and human values.",
+    extendedDescription:
+      "The title of the book 'Quest For Byzantine' signifies a land of felicity. Symbolically it's a dream land. The writer is trying to take the readers to a new place where there is bliss, hope, love, equality and human values. It is a collection of 23 articles on different subjects. His blogs on social media and articles published in newspapers have formed this book. These essays reflect the author's vision of an ideal society and the path to achieving it.",
+    pages: "170+",
+    language: "English",
+    tags: ["essays", "philosophy", "social commentary"],
+  },
+
+  // LITERARY
+  {
+    id: 15,
+    title: "Shabdashah",
+    subtitle: "Sahityik Diary",
+    slug: "shabdashah",
+    amazonLink:
+      "https://www.amazon.in/SAHITYIK-DIARY-Hindi-JYOTINDRA-PRASAD-ebook/dp/B0FK3XV116?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/shabdash.jpeg",
+    year: "2022",
+    category: "literary",
+    description:
+      "Literary diary depicting word-by-word, Brahma, and immortal words.",
+    extendedDescription:
+      "This book is depiction of word-by-word. Letters are 'Brahma(God)' and words are not perished. The words are immortal and every word spoken so far is believed to be echoing in the universe. So the author introduces you with Brahma. It is in literary form. Literature is a penance, which this writer observes. In this literary diary the author's literary activities, travelogue and review of books are registered. A meditation on the power of words and literature as a spiritual practice.",
+    pages: "190+",
+    language: "Hindi",
+    tags: ["literary", "words", "spirituality"],
+  },
+
+  // POETRY
+  {
+    id: 16,
+    title: "Raag-Viraag",
+    subtitle: "Antasraag - Poetry Collection",
+    slug: "raag-viraag",
+    amazonLink:
+      "https://www.amazon.in/Antasraag-Hindi-JYOTINDRA-NATH-PRASAD-ebook/dp/B0DBRFGWT3?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/raag-virag.jpeg",
+    year: "2020",
+    category: "poetry",
+    description:
+      "Best poetry book with blank verse - 'Ehsas' hailed as 'Chhayavadi kavita'.",
+    extendedDescription:
+      "It is the best poetry book composed by the poet. It is blank verse but connotation of some poems is rhythmic and like songs. A few have been published by the daily 'Dainik Bhaskar'. It is collection of representative poems of the bard. 'Ehsas' is his first and best poem and was hailed by the critics as 'Chhayavadi kavita'. Others too are superb. This collection explores the duality of human emotions - attachment and detachment, joy and sorrow, hope and despair.",
+    pages: "120+",
+    language: "Hindi",
+    tags: ["poetry", "emotions", "chhayavadi"],
+  },
+  {
+    id: 24,
+    title: "Rasdhaar",
+    slug: "rasdhaar",
+    amazonLink:
+      "https://www.amazon.in/Rasdhaar-Hindi-JYOTINDRA-NATH-PRASAD-ebook/dp/B0DC5L39TQ?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/raag-virag.jpeg",
+    year: "2024",
+    category: "poetry",
+    description:
+      "A flow of emotions and poetic expressions capturing life's essence.",
+    extendedDescription:
+      "Rasdhaar is a poetic journey that flows with emotions, capturing the essence of life through verse. The poems explore various rasas (emotions) of human experience, from joy and love to sorrow and longing, creating a tapestry of feelings that resonate with readers.",
+    pages: "130+",
+    language: "Hindi",
+    tags: ["poetry", "emotions", "hindi"],
+  },
+
+  // SATIRE
+  {
+    id: 17,
+    title: "Fashionwad Zindabad",
+    subtitle: "Vaah-Vaah - Satirical Essays",
+    slug: "fashionwad-zindabad",
+    amazonLink:
+      "https://www.amazon.in/Fashionwad-Zindabad-Jyotindra-Nath-Prasad/dp/B07TWM73NC?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/fashionwad-zindabad.jpeg",
+    year: "2019",
+    category: "satire",
+    description:
+      "Bestseller with 21 satirical essays - over one lakh audio listens.",
+    extendedDescription:
+      "The book in its audio form with title 'Fashionwad Zindabad' is a bestseller. It has registered nearly one lakh listens so far. It is a collection of 21 satirical essays. Most of it was written in his youth when he was working for a local newspaper 'The Searchlight (now defunct)'. Time has changed since then but the customs, circumstances and problems remain the same. Qualitative life has taken a low ebb and there is degeneration all around. The author has lampooned all these aspects of life in this book.",
+    pages: "140+",
+    language: "Hindi",
+    tags: ["satire", "social commentary", "essays"],
+  },
+  {
+    id: 25,
+    title: "Vah Vah",
+    slug: "vah-vah",
+    amazonLink:
+      "https://www.amazon.in/Vah-Vah-Hindi-Jyotindra-Nath-Prasad-ebook/dp/B0DTJ9H23P?ref_=ast_author_dp_rw&psc=1",
+    coverImage: "/fashionwad-zindabad.jpeg",
+    year: "2024",
+    category: "satire",
+    description:
+      "Satirical commentary on societal norms and human behavior with wit and humor.",
+    extendedDescription:
+      "Vah Vah is a collection of satirical writings that offer witty commentary on societal norms, human behavior, and the ironies of everyday life. Through humor and sharp observation, the author holds up a mirror to society, making readers laugh while provoking thought about the world we live in.",
+    pages: "150+",
+    language: "Hindi",
+    tags: ["satire", "humor", "hindi"],
+  },
+];
+
+// Helper function to get books by category
+export function getBooksByCategory(categoryId: string): Book[] {
+  if (categoryId === "all") return allBooks;
+  return allBooks.filter((book) => book.category === categoryId);
+}
+
+// Helper function to get book by slug
+export function getBookBySlug(slug: string): Book | undefined {
+  return allBooks.find((book) => book.slug === slug);
+}
+
+// Helper function to get related books
+export function getRelatedBooks(bookId: number, limit = 3): Book[] {
+  const book = allBooks.find((b) => b.id === bookId);
+  if (!book) return [];
+  return allBooks
+    .filter((b) => b.category === book.category && b.id !== bookId)
+    .slice(0, limit);
+}

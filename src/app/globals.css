@@ -1,3 +1,206 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+:root {
+    --color-bg-light: #faf9f7;
+    --color-bg-dark: #1a1612;
+    --color-text-light: #2c241b;
+    --color-text-dark: #f5f1eb;
+    --color-accent: #c9a227;
+    --color-accent-hover: #b8941f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.dark body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c9a227;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b8941f;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 600;
+}
+
+/* Elegant link styles */
+.elegant-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.elegant-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.elegant-link:hover::after {
+    width: 100%;
+}
+
+/* Book card hover effect */
+.book-card {
+    transition:
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.4s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #c9a227 0%, #d97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Paper texture background */
+.paper-texture {
+    position: relative;
+}
+
+.paper-texture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Quote styling */
+.quote-mark {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-accent);
+    opacity: 0.3;
+}
+
+/* Button styles */
+.btn-primary {
+    @apply px-8 py-3 bg-accent-600 text-white font-medium rounded-lg transition-all duration-300;
+    @apply hover:bg-accent-700 hover:shadow-lg hover:-translate-y-0.5;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+}
+
+.btn-secondary {
+    @apply px-8 py-3 border-2 border-accent-600 text-accent-600 font-medium rounded-lg transition-all duration-300;
+    @apply hover:bg-accent-600 hover:text-white hover:shadow-lg;
+    @apply dark:border-accent-400 dark:text-accent-400 dark:hover:bg-accent-400 dark:hover:text-gray-900;
+}
+
+/* Section divider */
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #c9a227, #d97706);
+    border-radius: 2px;
+}
+
+/* Image overlay gradient */
+.image-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+/* Animation utilities */
+.animate-delay-100 {
+    animation-delay: 100ms;
+}
+.animate-delay-200 {
+    animation-delay: 200ms;
+}
+.animate-delay-300 {
+    animation-delay: 300ms;
+}
+.animate-delay-400 {
+    animation-delay: 400ms;
+}
+.animate-delay-500 {
+    animation-delay: 500ms;
+}
+
+/* Timeline styles */
+.timeline-line {
+    @apply absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-400 to-accent-600;
+}
+
+@media (min-width: 768px) {
+    .timeline-line {
+        @apply left-1/2 -translate-x-1/2;
+    }
+}
