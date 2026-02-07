@@ -3,9 +3,9 @@
 A modern, elegant website showcasing the literary works of Jyotindra Nath Prasad - a distinguished author and journalist from Bihar, India.
 
 ![Author Website](https://img.shields.io/badge/Author-Jyotindra%20Nath%20Prasad-amber)
-![Next.js](https://img.shields.io/badge/Next.js-13.4-black)
-![React](https://img.shields.io/badge/React-18-61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6)
+![Next.js](https://img.shields.io/badge/Next.js-16.1-black)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-06B6D4)
 
 ## ✨ Features
@@ -92,8 +92,8 @@ The website features 25 books across various genres:
 
 ## 🛠️ Technologies Used
 
-- **Framework**: [Next.js](https://nextjs.org/) 13.4
-- **UI Library**: [React](https://react.dev/) 18
+- **Framework**: [Next.js](https://nextjs.org/) 16.1
+- **UI Library**: [React](https://react.dev/) 19
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) 3.4
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
@@ -116,13 +116,14 @@ The website features 25 books across various genres:
 
 ## 📄 License
 
-This project is proprietary and maintained for Jyotindra Nath Prasad.
+MIT Licensed to Jyotindra Nath Prasad. See [LICENSE.md](LICENSE.md) for details.
 
 ## 🤝 Connect
 
-- 📧 Email: contact@jyotindranathprasad.com
+- 📧 Email: [prasadjyotindra@gmail.com](mailto:prasadjyotindra@gmail.com)
 - 📍 Location: Patna, Bihar, India
-- 📚 Books available on [Amazon](https://amazon.in) and [Kuku FM](https://kuku.fm)
+- 📚 Books: [Amazon](https://www.amazon.in/stores/Jyotindra-Nath-Prasad/author/B07T58GRJW/allbooks)
+- 🎧 Audiobooks: [Kuku FM](https://kukufm.com/explore?q=jyotindra&languageIds=1)
 
 ---
 
