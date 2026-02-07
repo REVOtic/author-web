@@ -3,7 +3,7 @@ import { getBookBySlug, allBooks } from "../../../data/books";
 import BookPageClient from "./BookPageClient";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
@@ -12,8 +12,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const book = getBookBySlug(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const book = getBookBySlug(slug);
 
   if (!book) {
     return {
@@ -32,6 +33,7 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function BookPage({ params }: Props) {
-  return <BookPageClient slug={params.slug} />;
+export default async function BookPage({ params }: Props) {
+  const { slug } = await params;
+  return <BookPageClient slug={slug} />;
 }
